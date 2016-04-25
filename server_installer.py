@@ -20,10 +20,10 @@ UNZIP = "sudo apt-get install unzip"
 collection = "new"
 solr_port = "8080"
 
-GETSOLR = "wget http://archive.apache.org/dist/lucene/solr/6.0.0/solr-6.0.0.tgz"
-UNPAKSOLR = "tar -xvf solr-6.0.0.tgz"
-STARTSOLR = "solr-6.0.0/bin/solr start -p " + solr_port
-CREATE_COLLECTION = "solr-6.0.0/bin/solr create -c " + collection
+GETSOLR = "wget http://archive.apache.org/dist/lucene/solr/5.5.0/solr-5.5.0.tgz"
+UNPAKSOLR = "tar -xvf solr-5.5.0.tgz"
+STARTSOLR = "solr-5.5.0/bin/solr start -p " + solr_port
+CREATE_COLLECTION = "solr-5.5.0/bin/solr create -c " + collection
 
 
 #######  Python stuff
