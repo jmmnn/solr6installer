@@ -12,7 +12,7 @@ import os
 UPDATE ="sudo apt-get update"
 GIT = "sudo apt-get install git"
 PIP = "sudo apt-get install python-pip"
-JAVA = "sudo apt-get install openjdk-8-jre"
+JAVA = "sudo apt-get install openjdk-7-jre"
 UNZIP = "sudo apt-get install unzip"
 
 #######  Solr install and start
