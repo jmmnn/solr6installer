@@ -7,7 +7,7 @@ import solr  # More about this python package see: https://github.com/edsu/solrp
 ############# CONFIGURATION #############
 
 search_collection = 'new'     ##define the collection name
-search_server = 'http://server:port/solr/' + str(search_collection)
+search_server = 'http://localhost:8080/solr/' + str(search_collection)
 
 #########################################
 
