@@ -18,7 +18,7 @@ UNZIP = "sudo apt-get install unzip"
 #######  Solr install and start
 #Solr configurations
 collection = "new"
-solr_port = "8080"
+solr_port = "8080"  #Solr default is 8983 but @ C9.io 8080 is required
 
 GETSOLR = "wget http://archive.apache.org/dist/lucene/solr/5.5.0/solr-5.5.0.tgz"
 UNPAKSOLR = "tar -xvf solr-5.5.0.tgz"
