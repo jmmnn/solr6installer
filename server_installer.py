@@ -12,7 +12,7 @@ import os
 UPDATE ="sudo apt-get update"
 GIT = "sudo apt-get install git"
 PIP = "sudo apt-get install python-pip"
-JAVA = "sudo apt-get install openjdk-7-jre"
+JAVA = "sudo apt-get install default-jre"
 UNZIP = "sudo apt-get install unzip"
 
 #######  Solr install and start
@@ -54,26 +54,28 @@ cmds3 = [
     ]
 
 dir = os.getcwd()
-print dir
 
 ###### Iterates over the FIRST list of commands
 count=0
 for cmd in cmds:
     count+=1
-    print "Running Command Number %s" % count
+    print ("____Running Command Number : ",count , " $" , cmd)
     subprocess.call(cmd, shell=True)
+    print ("____Finished Running Command: $" , cmd)
     
 
 ###### Iterates over the SECOND list of commands
 count2=0
 for cmd in cmds2:
     count2+=1
-    print "Running Command Number %s" % count2
+    print ("____Running Command Number : ",count2 , " $" , cmd)
     subprocess.call(cmd, shell=True)
+    print ("____Finished Running Command: $" , cmd)
     
 ###### Iterates over the THIRD list of commands
 count3=0
 for cmd in cmds3:
     count3+=1
-    print "Running Command Number %s" % count3
+    print ("____Running Command Number : ",count3 , " $" , cmd)
     subprocess.call(cmd, shell=True)
+    print ("____Finished Running Command: $" , cmd)
